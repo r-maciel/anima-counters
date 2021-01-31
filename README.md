@@ -21,12 +21,12 @@ It works for decimal and negative numbers.
 
 UNPKG
 ```html
-<div src="https://unpkg.com/browse/anima-counter@1.0.0/dist/index.js"></div>
+<script src="https://unpkg.com/browse/anima-counter@1.0.0/dist/index.js"></script>
 ```
 
 JSDELIVR
 ```html
-<div src="https://cdn.jsdelivr.net/npm/anima-counter@1.0.0/dist/index.js"></div>
+<script src="https://cdn.jsdelivr.net/npm/anima-counter@1.0.0/dist/index.js"></script>
 ```
 
 
