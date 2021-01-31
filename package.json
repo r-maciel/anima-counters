@@ -29,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/r-maciel/anima-counter/issues"
   },
-  "homepage": "https://github.com/r-maciel/anima-counter#readme"
+  "homepage": "https://github.com/r-maciel/anima-counter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-preset-minify": "^0.5.1"
+  }
 }
