@@ -1,0 +1,33 @@
+{
+  "name": "anima-counter",
+  "version": "1.0.0",
+  "description": "AnimaCounter is a module to animate counts up or counts down from any number to any number.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-maciel/anima-counter.git"
+  },
+  "keywords": [
+    "counter",
+    "counterup",
+    "counterdown",
+    "animacounter",
+    "numbers",
+    "countup",
+    "countdown",
+    "count-down",
+    "count-up",
+    "counter-up",
+    "counter-down",
+    "animate-numbers"
+  ],
+  "author": "Roberto Maciel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/r-maciel/anima-counter/issues"
+  },
+  "homepage": "https://github.com/r-maciel/anima-counter#readme"
+}
