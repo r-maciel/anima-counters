@@ -1,0 +1,40 @@
+body{
+    min-height: 100vh;
+    color: rgb(88, 88, 88);
+}
+
+.principal-decorator{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.principal-decorator .col-5{
+    height: 1px;
+    background-color: rgb(88, 88, 88);
+}
+
+.principal-decorator .col-2{
+    height: 3px;
+    background-color: rgb(49, 119, 141);
+}
+
+.number-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+    display: inline;
+    cursor: pointer;
+    font-size: 60px;
+}
+
+.different-styles .number{
+    font-size: 50px;
+}
+
+pre{
+    border-radius: 8px;
+}

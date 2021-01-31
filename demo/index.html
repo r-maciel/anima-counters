@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaCounter | Demos</title>
+    <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1 class="text-center pt-4">AnimaCounter Demo</h1>
+    <h2 class="text-center mb-5 h2-subtitle">An easy way to animate your numbers</h2>
+    
+    <div class="container-lg">
+        
+        <div class="col-12"><h2 class="mb-4 mt-5 text-center h2-principals">Installation</h2></div>
+        <div class="row principal-decorator mb-5 mx-4">
+            <div class="col-5"></div>
+            <div class="col-2"></div>
+            <div class="col-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>CDN</h4>
+                <pre><code class="language-html text-start py-2 px-4">&lt;script src="cdn"&gt;&lt;/script&gt;</code></pre>
+                <h4>NPM</h4>
+                <pre><code class="language-javascript text-start py-2 px-4">npm install anima-counter</code></pre>
+                <div class="pb-2">After installation you need to import the init function</div>
+                <pre><code class="language-javascript text-start py-2 px-4">const {initAnimaCounter} = require('anima-counter')</code></pre>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5 text-center h2-principals">Examples</h2>
+        <div class="row principal-decorator mb-5 mx-4">
+            <div class="col-5"></div>
+            <div class="col-2"></div>
+            <div class="col-5"></div>
+        </div>
+        <h2 class="mb-4 mt-5">Basic usage</h2>
+        <div class="row">
+            <div class="col-12 col-lg-7 order-lg-1">
+                <h4>HTML</h4>
+                <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter"&gt; 20000 &lt;/div&gt;</code></pre>
+                <h4>JS</h4>
+                <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+            </div>
+            <div class="col-12 col-lg-5 number-container order-lg-2">
+                <div class="number anima-counter">20000</div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5 text-end">Decimals & Datasets</h2>
+        <div class="row">
+            <div class="col-12 col-lg-7 order-lg-2">
+                <h4>HTML</h4>
+                <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter" data-anima-counter-duration="1000" data-anima-counter-start="-10000" data-anima-counter-style="fr-FR"&gt; 0.040 &lt;/div&gt;</code></pre>
+                <h4>JS</h4>
+                <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+            </div>
+            <div class="col-12 col-lg-5 number-container order-lg-1">
+                <div class="number anima-counter" 
+                data-anima-counter-duration="1000"
+                data-anima-counter-start="-100"
+                data-anima-counter-style="fr-FR">
+                    0.040
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5">Count Down</h2>
+        <div class="row">
+            <div class="col-12 col-lg-7 order-lg-1">
+                <h4>HTML</h4>
+                <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter" data-anima-counter-start="100"&gt; -0.020 &lt;/div&gt;</code></pre>
+                <h4>JS</h4>
+                <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+            </div>
+            <div class="col-12 col-lg-5 number-container order-lg-2">
+                <div class="number anima-counter" 
+                data-anima-counter-start="100">
+                    -0.020
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5 text-center">Different Styles</h2>
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="different-styles">
+                    <h4>HTML</h4>
+                    <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter" data-anima-counter-style="bn-BD"&gt; 20000.00 &lt;/div&gt;</code></pre>
+                    <h4>JS</h4>
+                    <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+                    <div class="number-container order-lg-1">
+                        <div class="number anima-counter"
+                        data-anima-counter-style="bn-BD"
+                        data-anima-counter-duration="1000"
+                        data-anima-counter-start="1999000">
+                            20000.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="different-styles">
+                    <h4>HTML</h4>
+                    <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter" data-anima-counter-style="es-MX"&gt; 20000.00 &lt;/div&gt;</code></pre>
+                    <h4>JS</h4>
+                    <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+                    <div class="number-container order-lg-1">
+                        <div class="number anima-counter"
+                        data-anima-counter-style="es-MX"
+                        data-anima-counter-duration="1000"
+                        data-anima-counter-start="1999000">
+                            20000.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="different-styles">
+                    <h4>HTML</h4>
+                    <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter" data-anima-counter-style="de-AT"&gt; 20000.00 &lt;/div&gt;</code></pre>
+                    <h4>JS</h4>
+                    <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+                    <div class="number-container order-lg-1">
+                        <div class="number anima-counter"
+                        data-anima-counter-style="de-AT"
+                        data-anima-counter-duration="1000"
+                        data-anima-counter-start="1999000">
+                            20000.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="mb-4 mt-5 text-end">Delay</h2>
+        <div class="text-end pb-5">
+            The counter will be executed 3 seconds after the number appers in the viewport
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-7 order-lg-2">
+                <h4>HTML</h4>
+                <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter" data-anima-counter-delay="3000"&gt; 100 &lt;/div&gt;</code></pre>
+                <h4>JS</h4>
+                <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+            </div>
+            <div class="col-12 col-lg-5 number-container order-lg-1">
+                <div class="number anima-counter" 
+                data-anima-counter-duration="1000"
+                data-anima-counter-start="-100"
+                data-anima-counter-delay="3000">
+                    100
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5">Customize Trigger(Effect)</h2>
+        <div class="pb-5">
+            This is how you can create your own effects, in this example the counter
+            plays and pauses if the mouse is over or out.
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-7 order-lg-1">
+                <h4>HTML</h4>
+                <pre><code class="language-html text-center py-3 px-4">&lt;div id="counter-hover"&gt; 50 &lt;/div&gt;</code></pre>
+                <h4>JS</h4>
+                <pre><code class="language-javascript py-3 px-4">
+//This line is only if you used NPM, not write this line if you used CDN
+import {animaCounter} from 'animaCounter'
+
+// The element
+let elementCounter = document.getElementById('counter-hover')
+
+//We pass the options we want. Effect option needs to be 'customize'.
+let options = {
+    duration: 500, 
+    start: -50, 
+    effect: 'customize'
+}
+
+// Create the object
+let newAnimaCounter = new animaCounter(elementCounter, options)
+
+// Add events
+elementCounter.addEventListener('mouseover', () => newAnimaCounter.play())
+elementCounter.addEventListener('mouseout', () => newAnimaCounter.pause())
+                </code></pre>
+            </div>
+            <div class="col-12 col-lg-5 number-container order-lg-2">
+                <div id="counter-hover" class="number">
+                    50
+                </div>
+            </div>
+        </div>
+
+        <div class="text-end pb-4 pt-5">
+            Developed by <strong>Roberto Maciel</strong>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="//unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+<script src="../dist/index.js"></script>
+<script>
+    hljs.initHighlightingOnLoad()
+    initAnimaCounter()
+
+    let elementCounter = document.getElementById('counter-hover')
+
+    let options = {
+        duration: 500, 
+        start: -50, 
+        effect: 'customize'
+    }
+
+    let newAnimaCounter = new animaCounter(elementCounter, options)
+
+    elementCounter.addEventListener('mouseover', () => newAnimaCounter.play())
+    elementCounter.addEventListener('mouseout', () => newAnimaCounter.pause())
+</script>
+</body>
+</html>
