@@ -9,7 +9,7 @@ Basically, you define a start number and an end number, if the start number is s
 It works for decimal and negative numbers.
 
 ## Demo
-[#AnimaCounter Demo](https://r-maciel.github.io/anima-counter/demo/)
+[AnimaCounter Demo](https://r-maciel.github.io/anima-counter/demo/)
 
 
 ## Usage
