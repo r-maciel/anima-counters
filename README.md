@@ -38,6 +38,7 @@ JSDELIVR
 
 #### JS
 ```javascript
+//This line is only if you used NPM, not write this line if you used CDN
 const {initAnimaCounter} = require('anima-counter')
 
 initAnimaCounter();
@@ -63,6 +64,7 @@ By default, the start number is 0, the duration of the animation is 3 seconds an
 You can change this behavior with an options object:
 
 ```javascript
+//This line is only if you used NPM, not write this line if you used CDN
 const {initAnimaCounter} = require('anima-counter')
 
 let options = {
