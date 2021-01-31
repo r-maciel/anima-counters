@@ -2,7 +2,8 @@
   "name": "anima-counter",
   "version": "1.0.0",
   "description": "AnimaCounter is a module to animate counts up or counts down from any number to any number.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": ["dist/"],
   "scripts": {
     "build": "babel index.js -d dist/",
     "test": "jest"
