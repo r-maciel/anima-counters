@@ -4,6 +4,7 @@
   "description": "AnimaCounter is a module to animate counts up or counts down from any number to any number.",
   "main": "index.js",
   "scripts": {
+    "build": "babel index.js -d dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

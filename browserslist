@@ -1,0 +1,5 @@
+last 4 versions
+not ie < 10
+edge >= 12
+iOS >= 10
+safari >= 10
