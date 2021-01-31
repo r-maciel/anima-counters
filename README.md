@@ -12,7 +12,23 @@ It works for decimal and negative numbers.
 
 ### Install
 
-    npm install anima-counter
+#### NPM
+
+  ```
+  npm install anima-counter
+  ```
+#### CDN
+
+UNPKG
+```html
+<div src="https://unpkg.com/browse/anima-counter@1.0.0/dist/index.js"></div>
+```
+
+JSDELIVR
+```html
+<div src="https://cdn.jsdelivr.net/npm/anima-counter@1.0.0/dist/index.js"></div>
+```
+
 
 ### Basic Usage
 
