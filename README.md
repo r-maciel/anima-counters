@@ -25,7 +25,7 @@ It works for decimal and negative numbers.
 
 UNPKG
 ```html
-<script src="https://unpkg.com/browse/anima-counters@1.0.0/dist/index.js"></script>
+<script src="https://unpkg.com/anima-counters@1.0.0/dist/index.js"></script>
 ```
 
 JSDELIVR
