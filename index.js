@@ -18,6 +18,9 @@ class animaCounter {
         this.effect = element.dataset.animaCounterEffect ?? options.effect
         this.style = element.dataset.animaCounterStyle ?? options.style
 
+        // Time per duration unit, 10 milliseconds
+        this.base = 10
+
         this.printNumber()
         this.getCountersTimers()
 
@@ -132,7 +135,7 @@ class animaCounter {
             this.animationTimer = setTimeout(
                 () => this.countUp(), 
                 // Multiply by 10 for 10 milliseconds as min for interval
-                (this.timers[0].times > 0 ? this.timers[0].value : this.timers[1].value) * 10 
+                (this.timers[0].times > 0 ? this.timers[0].value : this.timers[1].value) * this.base 
             )
             this.timers[0].times -= 1 
         }
@@ -150,7 +153,7 @@ class animaCounter {
             this.animationTimer = setTimeout(
                 () => this.countDown(), 
                 // Multiply by 10 for 10 milliseconds as min for interval
-                (this.timers[0].times > 0 ? this.timers[0].value : this.timers[1].value) * 10 
+                (this.timers[0].times > 0 ? this.timers[0].value : this.timers[1].value) * this.base 
             )
             this.timers[0].times -= 1 
         }
