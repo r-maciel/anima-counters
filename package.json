@@ -1,7 +1,7 @@
 {
-  "name": "anima-counter",
+  "name": "anima-counters",
   "version": "1.0.0",
-  "description": "AnimaCounter is a module to animate counts up or counts down from any number to any number.",
+  "description": "AnimaCounters is a module to animate counts up or counts down from any number to any number.",
   "main": "dist/index.js",
   "files": ["dist/"],
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/r-maciel/anima-counter.git"
+    "url": "git+https://github.com/r-maciel/anima-counters.git"
   },
   "keywords": [
     "counter",
@@ -29,9 +29,9 @@
   "author": "Roberto Maciel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/r-maciel/anima-counter/issues"
+    "url": "https://github.com/r-maciel/anima-counters/issues"
   },
-  "homepage": "https://github.com/r-maciel/anima-counter#readme",
+  "homepage": "https://github.com/r-maciel/anima-counters#readme",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",

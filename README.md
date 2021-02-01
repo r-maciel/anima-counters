@@ -1,6 +1,6 @@
-# AnimaCounter
+# AnimaCounters
 
-AnimaCounter is a module to animate counts up or counts down from any number to any number.
+AnimaCounters is a module to animate counts up or counts down from any number to any number.
 
 ## How does it work?
 
@@ -9,7 +9,7 @@ Basically, you define a start number and an end number, if the start number is s
 It works for decimal and negative numbers.
 
 ## Demo
-[AnimaCounter Demo](https://r-maciel.github.io/anima-counter/demo/)
+[AnimaCounter Demo](https://r-maciel.github.io/anima-counters/demo/)
 
 
 ## Usage
@@ -19,18 +19,18 @@ It works for decimal and negative numbers.
 #### NPM
 
   ```
-  npm install anima-counter
+  npm install anima-counters
   ```
 #### CDN
 
 UNPKG
 ```html
-<script src="https://unpkg.com/browse/anima-counter@1.0.0/dist/index.js"></script>
+<script src="https://unpkg.com/browse/anima-counters@1.0.0/dist/index.js"></script>
 ```
 
 JSDELIVR
 ```html
-<script src="https://cdn.jsdelivr.net/npm/anima-counter@1.0.0/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anima-counters@1.0.0/dist/index.js"></script>
 ```
 
 
@@ -39,7 +39,7 @@ JSDELIVR
 #### JS
 ```javascript
 //This line is only if you used NPM, not write this line if you used CDN
-const {initAnimaCounter} = require('anima-counter')
+const {initAnimaCounter} = require('anima-counters')
 
 initAnimaCounter();
 ```
@@ -65,7 +65,7 @@ You can change this behavior with an options object:
 
 ```javascript
 //This line is only if you used NPM, not write this line if you used CDN
-const {initAnimaCounter} = require('anima-counter')
+const {initAnimaCounter} = require('anima-counters')
 
 let options = {
     start: 40,
@@ -139,7 +139,7 @@ First we need to define an identifier to our element, can be whatever name you w
 #### JS
 ```javascript
 //This line is only if you used NPM, not write this line if you used CDN
-const {animaCounter} = require('anima-counter')
+const {animaCounter} = require('anima-counters')
 
 // The element
 let elementCounter = document.getElementById('counter-hover')
