@@ -89,7 +89,7 @@ initAnimaCounter(options);
 
 - **numberDuration**. Receives a positive integer >= 10, and defines the time of the iteration between each number of the count, it's in milliseconds. It overrides the *duration option*.
   
-  Default value is 0.
+  This option does not work with `effect: customize`. Default value is 0.
 
 - **style**. Now is time to talk about the number printing style. It defines the number style to print it, it use `toLocaleString()` function, so the style is given by the locales. 
   
