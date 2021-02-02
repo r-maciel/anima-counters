@@ -123,6 +123,7 @@ class animaCounter {
     }
 
     counter(){
+        this.printNumber()
         // How much numbers will be the increment or the decrement in the count
         let numberInterval = this.counters[0].times > 0 
                 ? this.counters[0].value 
@@ -142,7 +143,6 @@ class animaCounter {
             this.counters[0].times -= 1 
             this.counterInterval()
         }
-        this.printNumber()
     }
 
     counterInterval(){
