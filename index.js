@@ -1,7 +1,7 @@
 class animaCounter {
     constructor(element, op){
         // Merge default options with user options
-        let options = {duration: 300, start: 0, effect: 'scroll', delay: 0, ...op}
+        let options = {duration: 300, start: 0, effect: 'scroll', delay: 0, numberDuration: 0, ...op}
 
         this.element = element
 
@@ -17,12 +17,16 @@ class animaCounter {
         this.direction = this.number >= this.start ? 'up' : 'down'
         this.effect = element.dataset.animaCounterEffect ?? options.effect
         this.style = element.dataset.animaCounterStyle ?? options.style
+        this.numberDuration = element.dataset.animaCounterNumberDuration ? parseInt(element.dataset.animaCounterNumberDuration) :  options.numberDuration
 
         // Time per duration unit, 10 milliseconds
         this.base = 10
 
         this.printNumber()
-        this.getCountersTimers()
+
+        if(this.numberDuration < 10){
+            this.getCountersTimers()
+        }
 
         switch(this.effect){
             case 'none':
@@ -115,49 +119,39 @@ class animaCounter {
     }
 
     play(){
-        setTimeout(
-            () => {
-                this.direction == 'up' 
-                ? this.countUp() 
-                : this.countDown()
-            }, this.delay)
+        setTimeout(() => this.counter(), this.delay)
     }
 
+    counter(){
+        // How much numbers will be the increment or the decrement in the count
+        let numberInterval = this.counters[0].times > 0 
+                ? this.counters[0].value 
+                : this.counters[1].value
 
-    countUp(){
+        //For count up
         if(this.start < this.number) {
-            this.start += this.counters[0].times > 0 
-                ? this.counters[0].value 
-                : this.counters[1].value 
+            this.start += numberInterval
             
             this.counters[0].times -= 1 
-
-            this.animationTimer = setTimeout(
-                () => this.countUp(), 
-                // Multiply by 10 for 10 milliseconds as min for interval
-                (this.timers[0].times > 0 ? this.timers[0].value : this.timers[1].value) * this.base 
-            )
-            this.timers[0].times -= 1 
+            this.counterInterval()
+        }
+        //For count down
+        if(this.start > this.number) {
+            this.start -= numberInterval
+            
+            this.counters[0].times -= 1 
+            this.counterInterval()
         }
         this.printNumber()
     }
 
-    countDown(){
-        if(this.start > this.number) {
-            this.start -= this.counters[0].times > 0 
-                ? this.counters[0].value 
-                : this.counters[1].value 
-            
-            this.counters[0].times -= 1 
-
-            this.animationTimer = setTimeout(
-                () => this.countDown(), 
-                // Multiply by 10 for 10 milliseconds as min for interval
-                (this.timers[0].times > 0 ? this.timers[0].value : this.timers[1].value) * this.base 
-            )
-            this.timers[0].times -= 1 
-        }
-        this.printNumber()
+    counterInterval(){
+        this.animationTimer = setTimeout(
+            () => this.counter(), 
+            // Multiply by 10 for 10 milliseconds as min for interval
+            (this.timers[0].times > 0 ? this.timers[0].value : this.timers[1].value) * this.base 
+        )
+        this.timers[0].times -= 1 
     }
 
     printNumber(){
