@@ -47,6 +47,7 @@ class animaCounter {
             entries.forEach(entry => {
                 if(entry.isIntersecting){
                     this.play()
+                    observer.unobserve(entry.target);
                 }
             })
         }
