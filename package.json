@@ -1,6 +1,6 @@
 {
   "name": "anima-counters",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AnimaCounters is a module to animate counts up or counts down from any number to any number.",
   "main": "dist/index.js",
   "files": [
