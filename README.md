@@ -87,7 +87,7 @@ initAnimaCounter(options);
 
 - **duration**. Receives a positive integer, and defines the whole time is going to take to the counter to finish the count, it's given by intervals of 10 milliseconds, so if you pass a value of 100, it will be multiplied by 10, giving us 1000 milliseconds = 1 second. 
 
-- **numberDuration**. Receives a positive integer >= 10, and defines the time of the iteration between each number of the count. It overrides the *duration option*.
+- **numberDuration**. Receives a positive integer >= 10, and defines the time of the iteration between each number of the count, it's in milliseconds. It overrides the *duration option*.
   
   Default value is 0.
 
