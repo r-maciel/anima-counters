@@ -16,6 +16,7 @@ it('Test element', () => {
     
     let values = {
         duration: newAnimaCounter.duration,
+        numberDuration: newAnimaCounter.numberDuration,
         start: newAnimaCounter.start,
         number: newAnimaCounter.number,
         decimals: newAnimaCounter.decimals,
@@ -26,6 +27,7 @@ it('Test element', () => {
 
     let expectedValues = {
         duration: 300,
+        numberDuration: 0,
         start: 0,
         number: 20000,
         decimals: 2,

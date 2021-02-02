@@ -25,9 +25,9 @@
             <div class="col-12">
                 <h4>CDN</h4>
                 <h5>UNPKG</h5>
-                <pre><code class="language-html text-start py-2 px-4">&lt;script src="https://unpkg.com/anima-counters@1.0.0/dist/index.js"&gt;&lt;/script&gt;</code></pre>
+                <pre><code class="language-html text-start py-2 px-4">&lt;script src="https://unpkg.com/anima-counters@1.1.1/dist/index.js"&gt;&lt;/script&gt;</code></pre>
                 <h5>JSDELIVR</h5>
-                <pre><code class="language-html text-start py-2 px-4">&lt;script src="https://cdn.jsdelivr.net/npm/anima-counters@1.0.0/dist/index.js"&gt;&lt;/script&gt;</code></pre>
+                <pre><code class="language-html text-start py-2 px-4">&lt;script src="https://cdn.jsdelivr.net/npm/anima-counters@1.1.1/dist/index.js"&gt;&lt;/script&gt;</code></pre>
                 <h4>NPM</h4>
                 <pre><code class="language-javascript text-start py-2 px-4">npm install anima-counters</code></pre>
                 <div class="pb-2">After installation you need to import the init function</div>
@@ -84,6 +84,26 @@
                 <div class="number anima-counter" 
                 data-anima-counter-start="100">
                     -0.020
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4 mt-5 text-end">Interval Per Number</h2>
+        <div class="text-end pb-5">
+            Each number of the counter will be showed after aprox. 1000 milliseconds, numberDuration overrides duration option
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-7 order-lg-2">
+                <h4>HTML</h4>
+                <pre><code class="language-html text-center py-3 px-4">&lt;div class="anima-counter" data-anima-counter-number-duration="1000"&gt; 100 &lt;/div&gt;</code></pre>
+                <h4>JS</h4>
+                <pre><code class="language-javascript text-center py-3 px-4">initAnimaCounter()</code></pre>
+            </div>
+            <div class="col-12 col-lg-5 number-container order-lg-1">
+                <div class="number anima-counter" 
+                data-anima-counter-number-duration="1000"
+                data-anima-counter-style="fr-FR">
+                    100
                 </div>
             </div>
         </div>

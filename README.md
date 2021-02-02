@@ -25,12 +25,12 @@ It works for decimal and negative numbers.
 
 UNPKG
 ```html
-<script src="https://unpkg.com/anima-counters@1.0.0/dist/index.js"></script>
+<script src="https://unpkg.com/anima-counters@1.1.1/dist/index.js"></script>
 ```
 
 JSDELIVR
 ```html
-<script src="https://cdn.jsdelivr.net/npm/anima-counters@1.0.0/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/anima-counters@1.1.1/dist/index.js"></script>
 ```
 
 
@@ -70,6 +70,7 @@ const {initAnimaCounter} = require('anima-counters')
 let options = {
     start: 40,
     duration: 90,
+    numberDuration: 1000,
     style: 'es-MX',
     effect: 'scroll',
     delay: 3000
@@ -85,8 +86,10 @@ initAnimaCounter(options);
   Default value is 0.
 
 - **duration**. Receives a positive integer, and defines the whole time is going to take to the counter to finish the count, it's given by intervals of 10 milliseconds, so if you pass a value of 100, it will be multiplied by 10, giving us 1000 milliseconds = 1 second. 
+
+- **numberDuration**. Receives a positive integer >= 10, and defines the time of the iteration between each number of the count, it's in milliseconds. It overrides the *duration option*.
   
-  Default value is 300 = 3000 milliseconds = 3 seconds.
+  Default value is 0.
 
 - **style**. Now is time to talk about the number printing style. It defines the number style to print it, it use `toLocaleString()` function, so the style is given by the locales. 
   
@@ -105,6 +108,7 @@ The passed values in the options object will affect all the tags with **'anima-c
 
 - data-anima-counter-start="-50"
 - data-anima-counter-duration="2000"
+- data-anima-counter-number-duration="1000"
 - data-anima-counter-style="es-MX"
 - data-anima-counter-effect="none"
 - data-anima-counter-delay="3000"
