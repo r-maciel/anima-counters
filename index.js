@@ -119,7 +119,26 @@ class animaCounter {
     }
 
     play(){
-        setTimeout(() => this.counter(), this.delay)
+        if(this.numberDuration > 10){
+            this.counterPerNumber()
+        }
+        else{
+            this.delay > 10 ? setTimeout(() => this.counter(), this.delay) : this.counter()
+        }
+    }
+
+    counterPerNumber(){
+        this.printNumber()
+        //For count up
+        if(this.start < this.number) {
+            this.start += 1
+            setTimeout(() => this.counterPerNumber(), this.numberDuration)
+        }
+        //For count down
+        if(this.start > this.number) {
+            this.start -= 1
+            setTimeout(() => this.counterPerNumber(), this.numberDuration)
+        }
     }
 
     counter(){
@@ -127,7 +146,7 @@ class animaCounter {
         // How much numbers will be the increment or the decrement in the count
         let numberInterval = this.counters[0].times > 0 
                 ? this.counters[0].value 
-                : this.counters[1].value
+                : (this.counters[1] ? this.counters[1].value : 0)
 
         //For count up
         if(this.start < this.number) {
