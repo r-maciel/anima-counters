@@ -119,7 +119,7 @@ class animaCounter {
     }
 
     play(){
-        if(this.numberDuration > 10){
+        if(this.numberDuration >= 10){
             this.counterPerNumber()
         }
         else{
